@@ -1,9 +1,9 @@
 {
-  "name": "start-template",
+  "name": "pug-sass-boilerplate",
   "version": "1.0.0",
-  "description": "My start Template",
+  "description": "PUG and SASS Boilerplate",
   "main": "index.js",
-  "author": "Salamatin Anatoliy",
+  "author": "Benjamin Wunn",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -31,10 +31,8 @@
     "gulp-svgmin": "^2.1.0",
     "gulp-uglify": "^3.0.1",
     "imagemin-jpeg-recompress": "^5.1.0",
-    "imagemin-pngquant": "^6.0.0"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.0",
-    "svg4everybody": "^2.1.9"
+    "imagemin-pngquant": "^6.0.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
   }
 }
