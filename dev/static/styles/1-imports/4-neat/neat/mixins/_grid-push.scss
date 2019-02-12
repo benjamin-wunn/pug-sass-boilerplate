@@ -23,15 +23,15 @@
 ///   }
 
 @mixin grid-push($push: false, $grid: $neat-grid) {
-  $_grid-columns: _retrieve-neat-setting($grid, columns);
-  $_grid-gutter: _retrieve-neat-setting($grid, gutter);
+    $_grid-columns: _retrieve-neat-setting($grid, columns);
+    $_grid-gutter: _retrieve-neat-setting($grid, gutter);
 
-  @if $push {
-    $_gutter-affordance: $_grid-gutter * 2;
-    $_margin-value: calc(#{_neat-column-width($grid, $push)} + #{$_gutter-affordance});
-    margin-#{_neat-float-direction($grid)}: $_margin-value;
-  } @else {
-    $_margin-value: _retrieve-neat-setting($grid, gutter);
-    margin-#{_neat-float-direction($grid)}: $_margin-value;
-  }
+    @if $push {
+        $_gutter-affordance: $_grid-gutter * 2;
+        $_margin-value: calc(#{_neat-column-width($grid, $push)} + #{$_gutter-affordance});
+        margin-#{_neat-float-direction($grid)}: $_margin-value;
+    } @else {
+        $_margin-value: _retrieve-neat-setting($grid, gutter);
+        margin-#{_neat-float-direction($grid)}: $_margin-value;
+    }
 }

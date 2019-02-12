@@ -74,15 +74,15 @@
 ///   }
 
 @mixin grid-media($grids...) {
-  @each $_grid in $grids {
-    $_media: _retrieve-neat-setting($_grid, media);
-    $_query: _neat-parse-media($_media);
+    @each $_grid in $grids {
+        $_media: _retrieve-neat-setting($_grid, media);
+        $_query: _neat-parse-media($_media);
 
-    @media #{$_query} {
-      $_default-neat-grid: $neat-grid;
-      $neat-grid: map-merge($neat-grid, $_grid) !global;
-      @content;
-      $neat-grid: $_default-neat-grid !global;
+        @media #{$_query} {
+            $_default-neat-grid: $neat-grid;
+            $neat-grid: map-merge($neat-grid, $_grid) !global;
+            @content;
+            $neat-grid: $_default-neat-grid !global;
+        }
     }
-  }
 }

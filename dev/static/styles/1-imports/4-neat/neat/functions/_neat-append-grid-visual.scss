@@ -13,9 +13,9 @@
 /// @access private
 
 @function _neat-append-grid-visual($grid-visual-list, $attributes) {
-  @each $attribute in $attributes {
-    $grid-visual-list: append($grid-visual-list, $attribute, comma);
-  }
+    @each $attribute in $attributes {
+        $grid-visual-list: append($grid-visual-list, $attribute, comma);
+    }
 
-  @return $grid-visual-list;
+    @return $grid-visual-list;
 }

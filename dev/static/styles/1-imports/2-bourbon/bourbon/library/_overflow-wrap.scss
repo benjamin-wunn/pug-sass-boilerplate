@@ -19,6 +19,6 @@
 ///   }
 
 @mixin overflow-wrap($wrap: break-word) {
-  word-wrap: $wrap;
-  overflow-wrap: $wrap;
+    word-wrap: $wrap;
+    overflow-wrap: $wrap;
 }

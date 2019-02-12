@@ -12,15 +12,12 @@
 ///
 /// @access private
 
-@function _contains(
-  $list,
-  $values...
-) {
-  @each $value in $values {
-    @if type-of(index($list, $value)) != "number" {
-      @return false;
+@function _contains($list, $values...) {
+    @each $value in $values {
+        @if type-of(index($list, $value)) != 'number' {
+            @return false;
+        }
     }
-  }
 
-  @return true;
+    @return true;
 }

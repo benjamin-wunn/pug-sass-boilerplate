@@ -21,5 +21,5 @@
 /// @require {mixin} _directional-property
 
 @mixin border-style($values) {
-  @include _directional-property(border, style, $values);
+    @include _directional-property(border, style, $values);
 }

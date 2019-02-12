@@ -25,13 +25,9 @@
 ///
 /// @author Hugo Giraudel
 
-@mixin prefixer(
-  $property,
-  $value,
-  $prefixes: ()
-) {
-  @each $prefix in $prefixes {
-    #{"-" + $prefix + "-" + $property}: $value;
-  }
-  #{$property}: $value;
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{"-" + $prefix + "-" + $property}: $value;
+    }
+    #{$property}: $value;
 }

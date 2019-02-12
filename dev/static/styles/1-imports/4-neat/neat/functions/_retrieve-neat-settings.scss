@@ -14,6 +14,6 @@
 /// @access private
 
 @function _retrieve-neat-setting($grid, $setting) {
-  $_grid-settings: map-merge(_neat-merge-defaults($neat-grid), $grid);
-  @return map-get($_grid-settings, $setting);
+    $_grid-settings: map-merge(_neat-merge-defaults($neat-grid), $grid);
+    @return map-get($_grid-settings, $setting);
 }

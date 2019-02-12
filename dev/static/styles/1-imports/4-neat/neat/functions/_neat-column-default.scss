@@ -14,10 +14,10 @@
 /// @access private
 
 @function _neat-column-default($grid, $columns) {
-  @if $columns == null {
-    $_grid-columns: _retrieve-neat-setting($grid, columns);
-    @return $_grid-columns;
-  } @else {
-    @return $columns;
-  }
+    @if $columns == null {
+        $_grid-columns: _retrieve-neat-setting($grid, columns);
+        @return $_grid-columns;
+    } @else {
+        @return $columns;
+    }
 }
